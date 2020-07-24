@@ -10,8 +10,9 @@ workflows:
       xcode: latest
       cocoapods: default
     scripts:
-      - | #random
-      echo "hey"
+      - | 
+        #random
+        echo "hey"
     artifacts:
       - build/**/outputs/**/*.aab
     publishing:
