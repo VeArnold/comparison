@@ -1,0 +1,19 @@
+# Automatically generated on 2020-07-24 UTC from https://codemagic.io/app/5f1a9a3987de4d1efb83175c/settings
+# Note that this configuration is not an exact match to UI settings. Review and adjust as necessary.
+
+workflows:
+  default-workflow:
+    name: Default Workflow
+    max_build_duration: 60
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - #random
+    artifacts:
+      - build/**/outputs/**/*.aab
+    publishing:
+      email:
+        recipients:
+          - arnold.veltmann@ut.ee
