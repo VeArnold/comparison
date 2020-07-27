@@ -12,7 +12,7 @@ workflows:
     scripts:
       - name: random
         script: |
-        echo "hey"
+          echo "hey"
     artifacts:
       - build/**/outputs/**/*.aab
     publishing:
