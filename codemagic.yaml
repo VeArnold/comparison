@@ -147,6 +147,9 @@ workflows:
       - |
         #random
         echo "hey"
+        set -exo pipefail  # capture flutter test exit status
+        mkdir -p test-results && flutter test --machine | tee test-results/flutter.json  # pipe to both console and file
+    test_report: test-results/flutter.json
     artifacts:
       - build/**/outputs/**/*.aab
     publishing:
