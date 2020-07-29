@@ -1,0 +1,14 @@
+name: COMPARISON
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Debugging with tmate
+      uses: mxschmitt/action-tmate@v2
