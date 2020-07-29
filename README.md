@@ -1,6 +1,6 @@
 # comparison
 
-A new Flutter project.
+A new Flutter project to compare stuff.
 
 ## Getting Started
 
