@@ -9,6 +9,13 @@ workflows:
       flutter: stable
       xcode: latest
       cocoapods: default
+    triggering:
+      events:
+        - pull_request
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
     scripts:
       - name: random
         script: |
